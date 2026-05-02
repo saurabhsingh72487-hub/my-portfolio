@@ -2,48 +2,33 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Saurabh",
+  lastName: "Singh",
+  name: `Saurabh Singh`,
+  role: "Full-Stack Engineer (MERN)",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "saaurabhsigh13@gmail.com",
+  location: "Asia/Kolkata",
+  languages: ["English", "Hindi"],
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>Updates on full-stack development, MERN projects, and real-time web apps.</>,
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  // Set essentials: true for links you want to show on the about page
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/saurabhsingh72487-hub",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/saurabh-singh7",
     essential: true,
   },
   {
@@ -58,26 +43,27 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  title: `${person.name} | Full-Stack MERN Developer`,
+  description: `Portfolio website of ${person.name}, a Full-Stack Engineer specialized in MERN stack, WebRTC, Socket.io, Redux, AWS, and GCP.`,
+  headline: <>Building scalable real-time web applications</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">P2P Video Chat</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Featured project
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/p2p-video-chat",
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-</>
+      I'm Saurabh, a <Text as="span" size="xl" weight="strong">Full-Stack MERN Developer</Text>{" "}
+      focused on secure APIs, real-time communication, Redux-powered frontends, and cloud-ready web apps.
+    </>
   ),
 };
 
@@ -85,7 +71,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role} from Haldwani, Uttarakhand`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -94,7 +80,7 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -102,52 +88,72 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I'm a Full-Stack Developer specialized in architecting high-performance, real-time web
+        applications using the MERN stack. My work focuses on secure REST APIs, Redux state
+        management, WebRTC-based communication, Socket.io signaling, and cloud integrations using
+        AWS, GCP, Firebase, and Cloudinary.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
+    display: true,
+    title: "Projects & Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "p2p-video-chat",
+        timeframe: "Jan 2026 – Mar 2026",
+        role: "Full-Stack Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Architected a peer-to-peer video communication platform using WebRTC and Socket.io,
+            reducing server-side media streaming bottlenecks.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Engineered secure signaling logic with STUN/TURN integration to improve connectivity
+            across restricted networks.
+          </>,
+          <>
+            Built a responsive React interface that synchronizes media stream states across
+            different devices and hardware setups.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "chart-the-stock-market",
+        timeframe: "Dec 2025 – Feb 2026",
+        role: "Full-Stack Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Built a real-time financial dashboard for live market tracking and stock trend
+            analysis.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Created dynamic data visualization modules for historical stock trends and analytical
+            insights.
+          </>,
+          <>
+            Implemented authentication and personalized portfolio data handling for secure user
+            experiences.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "pinterest-clone",
+        timeframe: "Nov 2025 – Jan 2026",
+        role: "Full-Stack Developer",
+        achievements: [
+          <>
+            Developed a media-heavy social platform using MongoDB, Express, React, Node.js,
+            Cloudinary, JWT, and Redux.
+          </>,
+          <>
+            Integrated asynchronous image upload and processing workflows through Cloudinary.
+          </>,
+          <>
+            Centralized app state using Redux Toolkit and protected REST endpoints using JWT-based
+            authorization.
           </>,
         ],
         images: [],
@@ -155,78 +161,121 @@ const about: About = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "MIET Kumaon, Haldwani",
+        description: <>BCA — Bachelor of Computer Applications, 2023 | 7.0 CGPA</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Uttarakhand Board",
+        description: <>Class XII, 2020 | 70%</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
+        title: "MERN Stack",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>
+            Building scalable full-stack applications with React, Node.js, Express, and MongoDB.
+          </>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "React",
+            icon: "react",
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Node.js",
+            icon: "nodejs",
+          },
+          {
+            name: "MongoDB",
+            icon: "mongodb",
+          },
+          {
+            name: "Express",
+            icon: "javascript",
           },
         ],
+        images: [],
       },
       {
-        title: "Next.js",
+        title: "State Management & APIs",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>
+            Designing REST APIs, JWT authentication flows, schema structures, and frontend state
+            using Redux Toolkit and Context API.
+          </>
         ),
         tags: [
           {
-            name: "JavaScript",
+            name: "Redux",
+            icon: "redux",
+          },
+          {
+            name: "JWT",
             icon: "javascript",
           },
           {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
+            name: "REST API",
+            icon: "javascript",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
+        images: [],
+      },
+      {
+        title: "Real-Time Communication",
+        description: (
+          <>
+            Developing low-latency applications using WebRTC, Socket.io, peer-to-peer architecture,
+            and STUN/TURN servers.
+          </>
+        ),
+        tags: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "WebRTC",
+            icon: "javascript",
+          },
+          {
+            name: "Socket.io",
+            icon: "nodejs",
           },
         ],
+        images: [],
+      },
+      {
+        title: "Cloud & Media Infrastructure",
+        description: (
+          <>
+            Working with AWS S3/EC2, GCP, Firebase, and Cloudinary for deployment, storage,
+            authentication, and media handling.
+          </>
+        ),
+        tags: [
+          {
+            name: "AWS",
+            icon: "aws",
+          },
+          {
+            name: "GCP",
+            icon: "google",
+          },
+          {
+            name: "Firebase",
+            icon: "firebase",
+          },
+          {
+            name: "Cloudinary",
+            icon: "cloud",
+          },
+        ],
+        images: [],
       },
     ],
   },
@@ -235,70 +284,23 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  title: "Writing about full-stack development...",
+  description: `Technical notes and development updates by ${person.name}`,
 };
 
 const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  description: `Full-stack MERN, real-time, and cloud-based projects by ${person.name}`,
 };
 
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
-  images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
+  title: `Gallery – ${person.name}`,
+  description: `A collection of project visuals by ${person.name}`,
+  images: [],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
