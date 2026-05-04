@@ -186,7 +186,10 @@ const schema: SchemaConfig = {
 };
 
 const sameAs: SameAsConfig = {
-  linkedin: "https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME",
+  linkedin: "",
+  threads: "",
+  discord: "",
+
 };
 
 const socialSharing: SocialSharingConfig = {
