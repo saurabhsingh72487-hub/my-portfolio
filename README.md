@@ -197,10 +197,7 @@ npm start
 
 **Saurabh Singh**
 
-- GitHub: https://github.com/saurabhsingh72487-hub
-- LinkedIn: https://linkedin.com/in/your-linkedin
-- Portfolio: https://your-portfolio-url.vercel.app
-- Email: your-email@example.com
+
 
 ---
 
